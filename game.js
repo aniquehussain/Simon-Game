@@ -39,7 +39,7 @@ $(document).keypress(function() {
 
 // Functions
 function playSound(name) {
-  var audio = new Audio("sounds/" + name + ".mp3");
+  var audio = new Audio(name + ".mp3");
   audio.play();
 }
 
@@ -82,7 +82,7 @@ function checkAnswer(currentLevel) {
     }
   }
   else {
-  var wrong = new Audio("sounds/wrong.mp3");
+  var wrong = new Audio("wrong.mp3");
   wrong.play();
   $("#level-title").text("Game Over ------ Score : " + ((level - 1) * 5));
    setTimeout(function(){
